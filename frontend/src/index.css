@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --plate: #EEF0F2;
+  --sheet: #FFFFFF;
+  --graphite: #1C1F24;
+  --graphite-2: #4E5560;
+  --graphite-3: #8B929C;
+  --line: #D5D9DE;
+  --hivis: #FF6A13;
+  --hivis-deep: #D9500A;
+  --hivis-wash: #FFE9D9;
+  --steel: #5B6B7C;
+  --steel-wash: #E6EBF0;
+  --series-d: #3F7C85;
+  --watch: #B58100;
+  --fault: #A8201F;
+}
+
+body {
+  margin: 0;
+  background-color: var(--plate);
+  color: var(--graphite);
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar matching 2026 industrial aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--plate);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--graphite-3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--graphite-2);
+}
+
+.label-tape-text {
+  font-family: 'Share Tech Mono', monospace;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
